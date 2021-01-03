@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line Chart</title>
+    <meta charset="utf-8" />
+    <style>
+    .graphicLayers {
+    	position: relative;	
+    	left:100px
+    }
+    
+    .controllers {
+    	position: relative;	
+    	left:100px;
+    	top:400px;
+	
+    }
+    
+    .canvasLayer{
+    	position: absolute; 
+    	left: 0; 
+    	top: 0; 
+    }
+    </style>
+	<script src="06.01.layers.optimized.js"></script>		
+  </head>
+  <body style="background:#fafafa">
+  	<h1>Users Changed between within a year</h1>
+  	<div id="chartContainer" class="graphicLayers" >
+	  	<canvas id="base" class="canvasLayer" width="550" height="400"> </canvas>
+
+	</div>
+	<div id="controllers" class="controllers">
+	
+	</div>
+	
+  </body>
+</html>

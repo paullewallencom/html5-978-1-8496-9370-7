@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps Markers and Events</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+    <style>
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map { height: 100%; width:100%; position:absolute; top:0px; left:0px }
+      
+      .overlay {
+		    background: #000000 scroll;
+		    height: 100%;
+		    left: 0;
+		    opacity: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    z-index: 50;
+		}
+		.overlayBox {
+		    left: -9999em;
+		    opacity: 0;
+		    position: absolute;
+		    z-index: 51;
+		    text-align:center;
+		    font-size:32px;
+		    color:#ffffff;
+		    font-family: 'Yellowtail', cursive;
+		}
+    </style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDtgFNill4p2NE7m-osBhNBaiDfDc8XMeQ&sensor=false"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    
+    <script src="./10.06.travel.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

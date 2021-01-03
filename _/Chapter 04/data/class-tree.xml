@@ -1,0 +1,19 @@
+<class name ="Display Object">
+	<class name="AVM1Mobie" />
+	<class name="Bitmap" />
+	<class name="InteractiveObject" >
+		<class name="DisplayObjectContainer">
+			<class name="Loader" />	
+			<class name="Sprite" >
+				<class name="MovieClip"/>
+			</class>	
+			<class name="Stage" />	
+		</class>	
+		<class name="SimpleButton" />	
+		<class name="TextField" />	
+	</class>
+	<class name="MorphShape" />
+	<class name="Shape" />
+	<class name="StaticText" />
+	<class name="Video" />
+</class>

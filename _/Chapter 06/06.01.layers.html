@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line Chart</title>
+    <meta charset="utf-8" />
+    <style>
+    .graphicLayers {
+    	position: relative;	
+    	left:100px
+    }
+    
+    .controllers {
+    	position: relative;	
+    	left:100px;
+    	top:400px;
+	
+    }
+    
+    .canvasLayer{
+    	position: absolute; 
+    	left: 0; 
+    	top: 0; 
+    }
+    </style>
+	<script src="06.01.layers.js"></script>		
+  </head>
+  <body style="background:#fafafa">
+  	<h1>Users Changed between within a year</h1>
+  	<div class="graphicLayers" >
+	  	<canvas id="base" class="canvasLayer" width="550" height="400"> </canvas>
+	  	
+	  	<canvas id="i2011" class="canvasLayer" width="550" height="400"> </canvas>
+	  	<canvas id="i2010" class="canvasLayer" width="550" height="400"> </canvas>
+	  	<canvas id="i2009" class="canvasLayer" width="550" height="400"> </canvas>
+
+	</div>
+	<div class="controllers">
+	2009 : <input type="radio" name="i2009" value="-1" /> off
+  		  <input type="radio" name="i2009" value="0" /> line
+  		  <input type="radio" name="i2009" value="1" select="1" /> full ||
+  	2010 : <input type="radio" name="i2010" value="-1" /> off
+  		  <input type="radio" name="i2010" value="0" /> line
+  		  <input type="radio" name="i2010" value="1" select="1" /> full ||
+  	2011 : <input type="radio" name="i2011" value="-1" /> off
+  		  <input type="radio" name="i2011" value="0" /> line
+  		  <input type="radio" name="i2011" value="1" select="1" /> full
+	</div>
+	
+  </body>
+</html>

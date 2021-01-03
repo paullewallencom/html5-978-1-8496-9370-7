@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line Chart</title>
+    <meta charset="utf-8" />
+    <style>
+    .graphicLayers {
+    	position: relative;	
+    	left:100px
+    }
+    
+    .canvasLayer{
+    	position: absolute; 
+    	left: 0; 
+    	top: 0; 
+    }
+    </style>
+	<script src="06.02.animate.js"></script>		
+  </head>
+  <body onLoad="init();" style="background:#fafafa">
+  	<h1>Users Changed between within a year</h1>
+  	<div class="graphicLayers" >
+	  	<canvas id="base" class="canvasLayer" width="550" height="400"> </canvas>
+	  	<canvas id="bar1" class="canvasLayer" width="550" height="400"> </canvas>
+	  	<canvas id="bar2" class="canvasLayer" width="550" height="400"> </canvas>
+	  	<canvas id="bar3" class="canvasLayer" width="550" height="400"> </canvas>
+	</div>
+  </body>
+</html>
